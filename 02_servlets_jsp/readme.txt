@@ -2,7 +2,7 @@ Servlet Jsp project
 Веб приложение:
 Есть две роли user и admin.
 UI создана с использованием JSP и JSTL. Есть страница логина
-![alt text](https://github.com/Ruslan5/javaR2EE/tree/master/02_servlets_jsp/src/main/resources/screenshor/01login.png?raw=true)
+![alt text](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/01login.png?raw=true)
 
 страница для роли user
 
