@@ -18,7 +18,7 @@ import java.util.Properties;
  */
 public class ConfigManager {
 
-    private static Logger logger = Logger.getLogger(GenericJdbcDao.class);
+    private static Logger logger = Logger.getLogger(ConfigManager.class);
     private BasicDataSource basicDataSource;
     String path;
 
@@ -27,7 +27,7 @@ public class ConfigManager {
     }
 
     private BasicDataSource bsSetUp(){
-        BasicDataSource basicDataSource = new BasicDataSource();
+        basicDataSource = new BasicDataSource();
         Properties properties = loadResource();
         basicDataSource.setDriverClassName(properties.getProperty("jdbc.driver"));
         basicDataSource.setUrl(properties.getProperty("jdbc.url"));

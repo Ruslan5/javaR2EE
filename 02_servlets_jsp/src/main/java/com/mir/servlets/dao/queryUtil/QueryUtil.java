@@ -3,8 +3,8 @@ package com.mir.servlets.dao.queryUtil;
 /**
  * class QueryUtil.
  *
- * @author R.Mirzoiev
- * @since 31.01.2022
+ * @author R.M.
+ * @since 2022
  */
 public class QueryUtil {
 

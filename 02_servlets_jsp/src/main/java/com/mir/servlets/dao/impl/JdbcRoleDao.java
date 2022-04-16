@@ -22,11 +22,11 @@ import static com.mir.servlets.dao.queryUtil.QueryUtil.SQL_UPDATE_ROLE;
 /**
  * class JdbcRoleDao.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see GenericJdbcDao
  * @see RoleDao
  * @see Role
- * @since 31.01.2022
+ * @since 2022
  */
 public class JdbcRoleDao extends GenericJdbcDao<Role> implements RoleDao<Role> {
     private static Logger logger = Logger.getLogger(JdbcRoleDao.class);

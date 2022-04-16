@@ -1,9 +1,10 @@
 <%--=========================================================================== 
 Footer (bottom area). 
 ===========================================================================--%> 
-<footer>
+<footer class="fixed-bottom">
   <nav class="navbar navbar-expand-md navbar-dark" style="background-color: tomato">
   <tr>
       <td id="footer" class="text-center">&copy;Mirzoiev 2022</td>
   </tr>
+  </nav>
 </footer>

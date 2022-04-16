@@ -26,11 +26,11 @@ import static com.mir.servlets.dao.queryUtil.QueryUtil.SQL_UPDATE_USER;
 /**
  * class JdbcUserDao.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see GenericJdbcDao
  * @see UserDao
  * @see User
- * @since 31.01.2022
+ * @since 2022
  */
 public class JdbcUserDao extends GenericJdbcDao<User> implements UserDao<User> {
     private static Logger logger = Logger.getLogger(JdbcUserDao.class);

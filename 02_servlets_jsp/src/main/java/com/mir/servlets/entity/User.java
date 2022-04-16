@@ -5,8 +5,8 @@ import java.util.Objects;
 /**
  * Entity User.
  *
- * @author R.Mirzoiev
- * @since 31.01.2022
+ * @author R.M.
+ * @since 2022
  */
 public class User {
     private long id;

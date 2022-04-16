@@ -15,9 +15,9 @@ import java.util.ArrayList;
 /**
  * MyTag custom tag.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see Tag
- * @since 31.01.2022
+ * @since 2022
  */
 public class MyTag implements Tag {
     private ArrayList users;

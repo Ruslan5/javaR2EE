@@ -21,9 +21,9 @@ import java.io.IOException;
 /**
  * LoginFilter filter.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see Filter
- * @since 31.01.2022
+ * @since 2022
  */
 public class LoginFilter implements Filter {
     private static final Logger LOG = Logger.getLogger(LoginFilter.class);

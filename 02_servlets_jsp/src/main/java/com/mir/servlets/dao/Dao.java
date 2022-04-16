@@ -4,8 +4,8 @@ import java.util.List;
 /**
  * Interface Dao.
  *
- * @author R.Mirzoiev
- * @since 31.01.2022
+ * @author R.M.
+ * @since 2022
  */
 public interface Dao<E> {
 

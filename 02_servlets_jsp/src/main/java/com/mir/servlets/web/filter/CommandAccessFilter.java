@@ -23,9 +23,9 @@ import java.util.StringTokenizer;
 /**
  * CommandAccessFilter filter.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see Filter
- * @since 31.01.2022
+ * @since 2022
  */
 public class CommandAccessFilter implements Filter {
 

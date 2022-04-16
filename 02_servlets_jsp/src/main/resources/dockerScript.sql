@@ -1,23 +1,22 @@
---drop all objects;
-
+drop all objects;
 CREATE TABLE ROLES_DB
 (
- ID bigint PRIMARY KEY AUTO_INCREMENT,
- NAME VARCHAR(255)
- );
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255)
+);
 INSERT INTO ROLES_DB VALUES(1, 'admin');
 INSERT INTO ROLES_DB VALUES(2, 'user');
 
 CREATE TABLE USERS_DB(
- ID bigint auto_increment primary key,
- LOGIN VARCHAR(255) NOT NULL,
- PASSWORD VARCHAR(255)  NOT NULL,
- EMAIL VARCHAR(255),
- FIRSTNAME VARCHAR(255),
- LASTNAME VARCHAR(255),
- BIRTHDAY DATE,
- ROLE_ID INTEGER,
-   FOREIGN KEY (ROLE_ID) REFERENCES ROLES_DB (ID) on delete cascade on update cascade
+                         id bigint auto_increment primary key,
+                         login VARCHAR(255) NOT NULL,
+                         password VARCHAR(255)  NOT NULL,
+                         email VARCHAR(255),
+                         firstname VARCHAR(255),
+                         lastname VARCHAR(255),
+                         birthday DATE,
+                         role_id INTEGER,
+                         FOREIGN KEY (role_id) REFERENCES ROLES_DB (id) on delete cascade on update cascade
 );
 
 INSERT INTO USERS_DB VALUES(default, 'login1', 'pass1', 'email1', 'fname1', 'lname1', '2000-11-01', 1);

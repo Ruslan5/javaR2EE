@@ -14,9 +14,9 @@ import java.io.IOException;
 /**
  * Controller coming all commands.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see HttpServlet
- * @since 31.01.2022
+ * @since 2022
  */
 public class Controller extends HttpServlet {
 

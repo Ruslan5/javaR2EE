@@ -9,9 +9,9 @@ import java.sql.SQLException;
 /**
  * abstract GenericJdbcDao.
  *
- * @author R.Mirzoiev
+ * @author R.M.
  * @see Dao
- * @since
+ * @since 2022
  */
 public abstract class GenericJdbcDao<E> implements Dao<E> {
     private static Logger logger = Logger.getLogger(JdbcUserDao.class);
