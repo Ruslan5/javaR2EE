@@ -1,0 +1,27 @@
+<!--Sample 04: Define the Tag Definition -->
+<taglib version="2.0">
+    <short-name>List of Users</short-name>
+    <uri>com.mir.servlets.web.myTag.MyTag</uri>
+    <tlib-version>2.0</tlib-version>
+    <tag>
+        <name>ListUsers</name>
+        <tag-class>com.mir.servlets.web.myTag.MyTag</tag-class>
+        <body-content>scriptless</body-content>
+         <attribute>
+             <name>users</name>
+             <type>java.util.ArrayList</type>
+             <required>true</required>
+             <rtexprvalue>true</rtexprvalue>
+         </attribute>
+        <attribute>
+            <name>printlogin</name>
+            <fragment>true</fragment>
+        </attribute>
+        <attribute>
+            <name>password</name>
+            <fragment>true</fragment>
+        </attribute>
+
+        <!-- //TagFile 05: Moved the Fragement to Tagfile-->
+    </tag>
+</taglib>
