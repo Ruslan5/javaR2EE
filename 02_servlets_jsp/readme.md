@@ -4,13 +4,17 @@ Servlet Jsp project
 UI создана с использованием JSP и JSTL. Есть страница логина:
 ![](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/01login.jpg)
 страница для роли user:
-![](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/02list.jpg)
+
+![](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/userp.jpg)
+
 и страница для роли admin. На которой выводится:
 список всех пользователей в БД, а также доступны следующие функции:
 - добавить нового пользователя;
 - редактировать существующего пользователя;
 - удалить пользователя.
-![](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/userp.jpg)
+
+![](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/02list.jpg)
+
     Все поля имеют валидацию ввода данных.
 Манипуляции с БД выполняются сервлетами.
 Интерыейс UI выполнен при помощи фреймворка Bootstrap.
