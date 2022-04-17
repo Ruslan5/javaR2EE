@@ -48,8 +48,6 @@ public class LoginFilter implements Filter {
         User user = userDao.findByLogin(login);
         LOG.trace("Found in DB: user --> " + user);
 
-
-
         if(allowParam(httpSession, "login")){
             chain.doFilter(req, resp);//sends request to next resource
         }
