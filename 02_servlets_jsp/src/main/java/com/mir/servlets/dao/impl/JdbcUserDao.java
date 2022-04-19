@@ -174,12 +174,12 @@ public class JdbcUserDao extends GenericJdbcDao<User> implements UserDao<User> {
     }
 
     private User rsToUser(ResultSet resultSet) throws SQLException {
-        Long userId = resultSet.getLong("ID");
+        Long userId = resultSet.getLong("id");
         String userLogin = resultSet.getString("Login");
         String userPassword = resultSet.getString("password");
         String userEmail = resultSet.getString("email");
-        String userFirstname = resultSet.getString("firstname");
-        String userLastname = resultSet.getString("lastname");
+        String userFirstname = resultSet.getString("firstName");
+        String userLastname = resultSet.getString("lastName");
         Date userBirthday = resultSet.getDate("birthday");
 
         Long userRoleId = resultSet.getLong("ROLE_ID");
@@ -193,6 +193,7 @@ public class JdbcUserDao extends GenericJdbcDao<User> implements UserDao<User> {
         user.setFirstName(userFirstname);
         user.setLastName(userLastname);
         user.setBirthday(userBirthday);
+
         Role role = new Role();
 
 

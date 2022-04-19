@@ -15,7 +15,7 @@ CREATE TABLE USERS_DB(
                          firstname VARCHAR(255),
                          lastname VARCHAR(255),
                          birthday DATE,
-                         role_id INTEGER,
+                         role_id bigint,
                          FOREIGN KEY (role_id) REFERENCES ROLES_DB (id) on delete cascade on update cascade
 );
 
