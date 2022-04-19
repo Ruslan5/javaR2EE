@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  backend:
+    container_name: mirzoiev
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    build: .
+
+
+  db:
+    image: buildo/h2database
+    container_name: mirzoiev-db
+    restart: always
+    volumes:
+       - ./dockerScript.sql:/docker-entrypoint-initdb.d/dockerScript.sql
