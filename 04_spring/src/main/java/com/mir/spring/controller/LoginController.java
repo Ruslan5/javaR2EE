@@ -49,7 +49,7 @@ public class LoginController {
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Value("${recaptcha.secret}")
-    private String secret = "6LcShpIeAAAAAG9GclUBI1NGV07L7Z5OC5-Zvo8o";
+    private String secret = "secret code";
 
     @Autowired
     private RestTemplate restTemplate;
