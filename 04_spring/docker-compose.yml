@@ -1,0 +1,21 @@
+version: "3.3"
+
+services:
+  web:
+    image: tomcat:9.0
+    build: .
+    container_name: mir-tomcat
+    ports:
+      - "8081:8081"
+    depends_on:
+      - springdb2
+  springdb2:
+    container_name: mir-h2-database
+    hostname: h2-database
+    image: nkonev/h2:1.4.200
+    volumes:
+      - ./src/main/resources/dbForDockerScript.sql:/docker-entrypoint-initdb.d/dbForDockerScript.sql
+    ports:
+      - "9092:9092"
+      - "8082:8082"
+    restart: "no"
