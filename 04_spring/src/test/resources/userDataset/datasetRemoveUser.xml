@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dataset>
-    <USERS_DB ID='1'  LOGIN='login1' PASSWORD='pass1' EMAIL="email1" FIRSTNAME="fname1" LASTNAME="lname1" BIRTHDAY="2000-11-01" ROLE_ID="1"/>
-</dataset>
