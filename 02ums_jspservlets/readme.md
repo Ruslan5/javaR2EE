@@ -1,5 +1,6 @@
-Servlet Jsp project
-Веб приложение:
+                    User management system (Servlets and jsp). 
+                    Веб приложение для управления пользователями с использованием сервлетов и страниц jsp.
+
 Есть две роли user и admin.
 UI создана с использованием JSP и JSTL. Есть страница логина:
 ![](https://github.com/Ruslan5/javaR2EE/blob/master/02_servlets_jsp/src/main/resources/screenshot/01login.jpg)
@@ -33,3 +34,4 @@ password: pass1
 Для сборки запуска проекта в докере нужно установить докер на ПК,
 проверка установлен ли докер можно командой docker --version.
 Затем в командной строке в корневой папке выполнить команду: docker-compose up.
+После сборки приложение будет лоступно по адресу http://localhost:8080
