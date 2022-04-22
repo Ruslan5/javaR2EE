@@ -1,0 +1,9 @@
+<%--=========================================================================== 
+Footer (bottom area). 
+===========================================================================--%> 
+<footer>
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: tomato">
+  <tr>
+      <td id="footer" class="text-center">&copy;Mirzoiev 2022</td>
+  </tr>
+</footer>
