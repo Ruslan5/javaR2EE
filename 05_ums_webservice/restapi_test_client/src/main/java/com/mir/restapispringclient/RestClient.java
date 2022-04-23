@@ -12,12 +12,12 @@ public class RestClient {
     /**
      *   link for local use
      */
-    private static final String REST_URI = "http://localhost:8080/resources/user";
+//    private static final String REST_URI = "http://localhost:8080/resources/user";
 
     /**
      * link for docker use
      */
-//    private static final String REST_URI = "http://mirzoiev-tomcat:8080/resources/user";
+    private static final String REST_URI = "http://mir-tomcat-rest:8080/resources/user";
     private Client client = ClientBuilder.newClient();
 
     public Response getAllJsonUser() {

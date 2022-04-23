@@ -4,14 +4,14 @@ services:
   web:
     image: tomcat:9.0
     build: .
-    container_name: mir-tomcat
+    container_name: mir-tomcat-rest
     ports:
       - "8080:8080"
     depends_on:
-      - springdb2
-  springdb2:
-    container_name: mir-h2-database
-    hostname: h2-database
+      - restdb
+  restdb:
+    container_name: mir-h2-database-rest
+    hostname: h2-database-rest
     image: nkonev/h2:1.4.200
     volumes:
       - ./src/main/resources/dbForDockerScript.sql:/docker-entrypoint-initdb.d/dbForDockerScript.sql
