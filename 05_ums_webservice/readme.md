@@ -7,6 +7,7 @@ Server:
 которые хранятся в базе данных.
 Используемая база данных H2 database.
 REST API использует формат JSON.
+
 ![](https://github.com/Ruslan5/javaR2EE/blob/master/05_ums_webservice/restapi_spring_server/src/main/resources/img/restapiserver.gif)
 
 Client:
