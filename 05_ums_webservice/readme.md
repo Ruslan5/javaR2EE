@@ -24,4 +24,4 @@ Client:
 docker-compose.yml файла и выполнить соманду docker-compose up. 
 Результатом работы веб-сервиса будет успешное прохождение тестов в терминале.
 
-![](https://github.com/Ruslan5/javaR2EE/tree/master/05_ums_webservice/restapiwebservicestest.png)
+![](https://github.com/Ruslan5/javaR2EE/blob/master/05_ums_webservice/restapiwebservicestest.png)
