@@ -18,4 +18,4 @@ Spring security выполняет разграничение достпа по 
 Клиентская часть UI выполнена при помощи фреймфорка React.
 Используемая версия node -v v16.4.2.
 
-![](https://github.com/Ruslan5/javaR2EE/tree/master/06_ums_springServer_reactUI/reactdemo.gif)
+![](https://github.com/Ruslan5/javaR2EE/blob/master/06_ums_springServer_reactUI/reactdemo.gif)
