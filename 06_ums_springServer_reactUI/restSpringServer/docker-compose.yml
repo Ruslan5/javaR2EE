@@ -1,0 +1,27 @@
+version: "3.3"
+
+services:
+  web:
+    image: tomcat:9.0
+    build: .
+    container_name: mirzoiev-tomcat
+    ports:
+      - "8080:8080"
+    depends_on:
+      - springdb2
+  springdb2:
+    container_name: mirzoiev-h2-database
+    hostname: h2-database
+    image: nkonev/h2:1.4.200
+    volumes:
+      - ./src/main/resources/dbForDockerScript.sql:/docker-entrypoint-initdb.d/dbForDockerScript.sql
+    ports:
+      - "9092:9092"
+      - "8082:8082"
+    restart: "no"
+  client:
+    build: ../reactclientui
+    ports:
+      - "3000:3000"
+    depends_on:
+      - web
