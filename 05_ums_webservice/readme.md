@@ -8,7 +8,7 @@ Server:
 Используемая база данных H2 database.
 REST API использует формат JSON.
 
-![](https://github.com/Ruslan5/javaR2EE/blob/master/05_ums_webservice/restapi_spring_server/src/main/resources/img/restapiserver.gif)
+![](https://github.com/Ruslan5/javaR2EE/blob/master/05_ums_webservice/restapi_spring_server/src/main/resources/img/05restapiserver.gif)
 
 Client:
 <a href="https://github.com/Ruslan5/javaR2EE/tree/master/05_ums_webservice/restapi_test_client">RESTful_API_Test_Client</a>
