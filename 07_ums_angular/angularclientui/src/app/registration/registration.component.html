@@ -1,0 +1,59 @@
+<div class="col-md-6 offset-md-3">
+  <h3> Registration new User</h3>
+  <form [formGroup]="userValid"  (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <label> Login</label>
+      <input type="text" class ="form-control" id = "login" formControlName="login"
+             required minlength="4" [(ngModel)] = "user.login" name = "login">
+      <span style="color: red" *ngIf="login && login.invalid && login.touched">Login input error </span>
+    </div>
+    <div class="form-group">
+      <label> Password</label>
+      <input type="password" class ="form-control" id = "password" formControlName="password"
+             [(ngModel)] = "user.password" name = "password">
+      <span style="color: red" *ngIf="password && password.invalid && password.touched">password input error </span>
+
+    </div>
+
+    <div class="form-group">
+      <label> Email</label>
+      <input type="text" class ="form-control" id = "email" formControlName="email"
+             [(ngModel)] = "user.email" name = "email">
+      <span style="color: red" *ngIf="email && email.invalid && email.touched">email input error </span>
+
+    </div>
+
+    <div class="form-group">
+      <label> FirstNma</label>
+      <input type="text" class ="form-control" id = "firstName" formControlName="firstName"
+             [(ngModel)] = "user.firstName" name = "firstName">
+      <span style="color: red" *ngIf="firstName && firstName.invalid && firstName.touched">firstName input error </span>
+    </div>
+
+    <div class="form-group">
+      <label> LastName</label>
+      <input type="text" class ="form-control" id = "lastName"  formControlName="lastName"
+             [(ngModel)] = "user.lastName" name = "lastName">
+      <span style="color: red" *ngIf="lastName && lastName.invalid && lastName.touched">lastName input error </span>
+
+    </div>
+
+    <div class="form-group">
+      <label> Birthday</label>
+      <input type="date" class ="form-control" id = "birthday" formControlName="birthday"
+             [(ngModel)] = "user.birthday" name = "birthday">
+      <span style="color: red" *ngIf="birthday && birthday.invalid && birthday.touched">birthday input error </span>
+
+    </div>
+
+    <div class="form-group">
+      <label> Role</label>
+      <select  size="1" class ="form-select" id = "role" [(ngModel)] = "user.role"  name="role"  formControlName="role" >
+        <option selected value="1">Admin</option>
+        <option value="2">User</option>
+      </select>
+      <span style="color: red" *ngIf="role && role.invalid && role.touched">role input error </span>
+    </div>
+    <button [disabled]="userValid.invalid" class = "btn btn-success" type ="submit">Submit</button>
+  </form>
+</div>

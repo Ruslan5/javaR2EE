@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <USERS_DB ID='1'  LOGIN='login1' PASSWORD='pass1' EMAIL="email1" FIRSTNAME="fname1" LASTNAME="lname1" BIRTHDAY="2000-11-01" ROLE_ID="1"/>
+    <USERS_DB ID='2'  LOGIN='login2' PASSWORD='pass2' EMAIL="email2" FIRSTNAME="fname2" LASTNAME="lname2" BIRTHDAY="2000-11-01" ROLE_ID="2"/>
+    <USERS_DB ID='3'  LOGIN='login3' PASSWORD='pass3' EMAIL="email3" FIRSTNAME="fname3" LASTNAME="lname3" BIRTHDAY="1970-01-01" ROLE_ID="1"/>
+
+</dataset>
